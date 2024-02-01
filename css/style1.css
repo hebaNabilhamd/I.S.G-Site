@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+
+/* body {
+  background: #f2f2f2;
+} */
+
+.container-box  {
+  position: relative;
+  /* left: 50%; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%); */
+  height: 300px;
+  width: 400px;
+  background: #0e2a68;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  color: beige;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-top: 50px;
+  display: inline-block;
+
+}
+
+.content-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: justify;
+  color: black;
+  padding: 40px;
+  font-family: 'Merriweather', serif;
+  visibility: hidden;
+  transition: visibility 0.5s;
+  margin-top: 30px;
+    overflow: auto; 
+    height: 280px;
+  
+
+  /* align-items: center; */
+}
+
+/* 
+.content-box h1{
+  font-weight: 700;
+  text-align: center;
+}
+
+.content-box h3{
+  font-weight: 300;
+} */
+
+.hover-content-box {
+  display: none;
+}
+
+.flap-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.flap-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s;
+}
+
+.container-box:hover .content-box {
+  visibility: visible;
+}
+
+.container-box:hover .flap-box img {
+  transform: translateX(-100%);
+}
+
+.container-box:hover .hover-content-box {
+  display: block;
+}
+
+.a-img{
+  border-radius: 50px;
+  width: 35%;
+  height: 38%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+h1{
+  color:antiquewhite;
+
+}
+/* ----------- */
+
+
