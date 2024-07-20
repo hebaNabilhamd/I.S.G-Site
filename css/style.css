@@ -781,3 +781,265 @@ div::-webkit-scrollbar-thumb {
     object-fit: fill; /* لتغطية المساحة بالكامل دون تشويه النسب */
     background-color: #191975; /* لون الخلفية الذي يظهر أثناء تحميل الفيديو أو إذا لم يتم دعم الفيديو */
 }
+
+.logo-customer{
+    width: 150px;
+    height: 150px;
+}
+.customer-div{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.h1-customer{
+    color: #fff;
+    margin-left: 90px;
+    background-color: #191975;
+    padding: 10px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.catalog-div{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 50px;
+}
+.catalog-img{
+    width: 230px;
+    height: 320px;
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.catalog-img:hover{
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 150, 0.4), 0 6px 20px 0 rgba(0, 0, 200, 0.4);
+
+}
+
+.cat{
+    display: inline-block;
+}
+.card-img-top-spa1{
+    height: 450px;
+    width: 300px;
+
+}
+.card-img-top-spa2{
+    height: 200px;
+    width: 250px;
+}
+.card-img-top-spa3{
+    height: 250px;
+    width: 300px;
+}
+
+.card{
+    margin: 50px;
+
+}
+.mk-center{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.disc-list {
+    counter-reset: step; /* Allows us to show the step number */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; /* Put the discs in a row */
+    flex-wrap: wrap; /* Allow them to wrap around as required */
+    margin-left: 18%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+    
+  }
+ 
+  
+  .disc-list li {
+    counter-increment: step; /* Increment the list number */
+    position: relative;
+    width: 13rem;
+    height: 13rem;
+    text-align: center;
+    border-radius: 50%; /* Make it a circle */
+    background: #888;
+    color: #888;
+    display: flex;
+    flex-shrink: 0; /* Don't allow the discs to squash inside the container */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 1.25rem 1.5rem 1.5rem; /* Right margin is the normal width - the border-width */
+    overflow: visible;
+    
+    
+  }
+  
+  /* Setup the rainbow colours on the discs 
+    - #00AFC0
+    - #00A3E1
+    - #27579C
+    - #934FC0
+    - #C04F8E
+    - #C04F5D
+    - #C07E4F
+    - #C0B54F
+  */
+  
+  .disc-list li:nth-child(1) {
+    background: #00AFC0;
+    color: #00AFC0;
+    
+      
+  }
+  
+  .disc-list li:nth-child(2) {
+    background: #00A3E1;
+    color: #00A3E1;
+  }
+  
+  .disc-list li:nth-child(3) {
+    background: #27579C;
+    color: #27579C;
+  }
+  
+  .disc-list li:nth-child(4) {
+    background: #934FC0;
+    color: #934FC0;
+  }
+  
+  .disc-list li:nth-child(5) {
+    background: #C04F8E;
+    color: #C04F8E;
+  }
+  
+  .disc-list li:nth-child(6) {
+    background: #C04F5D;
+    color: #C04F5D;
+  }
+  
+  .disc-list li:nth-child(7) {
+    background: #C07E4F;
+    color: #C07E4F;
+  }
+  
+  .disc-list li:nth-child(8) {
+    background: #C0B54F;
+    color: #C0B54F;
+  }
+  
+  /* The text inside the disc */
+  .disc-list li span {
+    color: #FFF;
+    display: block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    max-width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* The step number */
+  .disc-list li span::before {
+    content: counter(step);
+    display: block;
+    font-size: 1.65rem;
+    margin-bottom: 0.1rem;
+    font-weight: 200;
+  }
+  
+  /* The pointer container */
+  .disc-list li .pointer {
+    position: absolute;
+    right: -1.6rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  /* The arrow-head itself */
+  .disc-list li .pointer path {
+   fill: none;
+   stroke-linejoin: round;
+   stroke-width: 3px;
+   stroke: currentcolor; /* This allows the outline to inherit the text color automatically */
+  }
+  
+  /* Move the arrow head into position depending if it's an odd/even disc */
+  .disc-list li:nth-child(even) .pointer {
+    bottom: 20%;
+    transform: rotate(22.5deg);
+  }
+  
+  .disc-list li:nth-child(odd) .pointer {
+    top: 20%;
+    transform: rotate(22.5deg);
+  }
+  
+  .disc-list li::before,
+  .disc-list li::after {
+    content: '';  
+    position: absolute;
+    border: 0.25rem solid;
+    left: -1.5rem; /* Same as the disc-list li margin */
+    right: -1.5rem;
+  }
+  
+  /* The dotted elements */
+  .disc-list li:nth-child(even)::before {
+    border-top-style: dotted;
+    border-left-style: dotted;
+    border-radius: 50%/100% 100% 0 0;
+    border-bottom-color: transparent;
+    top: -1.5rem;
+    bottom: 50%;
+  }
+  
+  .disc-list li:nth-child(odd)::before {
+    border-bottom-style: dotted;
+    border-right-style: dotted;
+    border-top-color: transparent;
+    border-radius: 50%/0 0 100% 100%;
+    bottom: -1.5rem;
+    top: 50%;
+  }
+  
+  /* The solid line elements */
+  .disc-list li:nth-child(odd)::after {
+    transform-origin: bottom center;
+    transform: rotate(22.5deg);
+    border-width: 0.2rem;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: inherit;
+    border-left-color: inherit;
+    border-radius: 50%/100% 100% 0 0;
+    border-bottom-color: transparent;
+    top: -1.5rem;
+    bottom: 50%;
+  }
+  
+  .disc-list li:nth-child(even)::after {
+    transform-origin: top center;
+    transform: rotate(22.5deg);
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: transparent;
+    border-bottom-color: inherit;
+    border-right-color: inherit;
+    border-radius: 50%/0 0 100% 100%;
+    bottom: -1.5rem;
+    top: 50%;
+  }
+  .pointer{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
